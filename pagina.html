@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reservar Cita</title>
+    <meta name="description" content="Sitio web para reservar citas">
+</head>
+<body>
+
+    <h1>Reservar Cita</h1>
+
+    <form action="procesar_cita.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+
+        <label for="fecha">Fecha de la cita:</label>
+        <input type="date" id="fecha" name="fecha"><br><br>
+
+        <label for="hora">Hora de la cita:</label>
+        <input type="time" id="hora" name="hora"><br><br>
+
+        <label for="servicio">Tipo de servicio:</label>
+        <select id="servicio" name="servicio">
+            <option value="servicio1">Pestañas</option>
+            <option value="servicio2">uñas</option>
+            <!-- Agrega más opciones según sea necesario -->
+        </select><br><br>
+
+        <input type="submit" value="Reservar">
+    </form>
+
+</body>
+</html>
